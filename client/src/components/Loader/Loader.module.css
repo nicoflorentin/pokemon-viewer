@@ -1,0 +1,6 @@
+.loader {
+  width: 300px; /* Ajusta el tamaño según tus necesidades */
+  height: 300px; /* Asegúrate de que la imagen sea cuadrada */
+  border-radius: 50%; /* Esto hará que la imagen tenga forma redonda */
+  overflow: hidden;
+}

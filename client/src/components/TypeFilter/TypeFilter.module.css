@@ -1,0 +1,20 @@
+.selector {
+	font-weight: bold;
+	font-size: 14px;
+	padding: 10px 25px;
+	border-radius: 10px;
+	background: rgb(173, 136, 67);
+	border: unset;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	color: #000000;
+	cursor: pointer;
+  }
+  
+  .selector:hover {
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  
+  .selector:focus {
+	outline: none;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 3px rgba(211, 167, 84, 0.5);
+  }

@@ -1,0 +1,63 @@
+.cardsContainer {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.cardsRenderContainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	padding-top: 30px;
+}
+
+.pagesContainer {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.pagesContainer button:first-child {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 70px;
+}
+
+.pagesContainer button:last-child {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 70px;
+}
+
+.pageButton {
+	border: 1px solid transparent;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 239, 232, 0.336);
+}
+
+.pageButton:hover {
+	box-sizing: border-box;
+	cursor: pointer;
+	background-color: rgba(255, 182, 48, 0.493);
+}
+
+.currentPage {
+	background-color: rgb(173, 136, 67);
+	color: white;
+}
+
+.navButton {
+	all: unset;
+	cursor: pointer;
+	border: 1px solid transparent;
+	width: 40px;
+	background-color: rgb(218, 131, 81);
+}
+
+.loader {
+	border-radius: 100%;
+	width: 300px;
+	margin: auto;
+	margin-top: 150px;
+}
