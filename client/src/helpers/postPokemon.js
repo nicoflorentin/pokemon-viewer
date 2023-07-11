@@ -5,7 +5,8 @@ const postPokemon = (pokemon) => {
 	// Configuración de la solicitud POST
 	const config = {
 	  method: 'post',
-	  url: 'http://localhost:3001/pokemons',
+	  // url: 'http://localhost:3001/pokemons',
+	  url: 'https://pokemon-api-82j0.onrender.com/pokemons',
 	//   url: 'http://localhost:3001/asd',
 	  data: pokemon
 	};
