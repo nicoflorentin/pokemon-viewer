@@ -26,4 +26,4 @@ const Card = ({ pokemon }) => {
 	);
 };
 
-export default Card;
+export default Card
