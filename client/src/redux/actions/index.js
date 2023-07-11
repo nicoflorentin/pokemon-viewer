@@ -8,11 +8,13 @@ export const CLEAN_DETAIL = "CLEAN_DETAIL";
 export const ORDER_POKEMONS = 'ORDER_POKEMONS'
 export const FILTER_BY_TYPE = 'FILTER_BY_TYPE'
 
+const DB_HOST = 'https://pokemon-api-82j0.onrender.com'
+
 
 export const getTypes = () => {
 	console.log(GET_TYPES);
 	return function (dispatch) {
-		return axios(`http://localhost:3001/types`)
+		return axios(`${DB_HOST}/types`)
 			.then((response) => {
 				// console.log(response.data);
 				dispatch({ type: GET_TYPES, payload: response.data });
@@ -24,7 +26,7 @@ export const getTypes = () => {
 export const getPokemons = () => {
 	console.log(GET_POKEMONS);
 	return function (dispatch) {
-		return axios(`http://localhost:3001/pokemons`)
+		return axios(`${DB_HOST}/pokemons`)
 			.then((response) => {
 				dispatch({ type: GET_POKEMONS, payload: response.data });
 			})
@@ -35,7 +37,7 @@ export const getPokemons = () => {
 export const getPokemonById = (id) => {
 	console.log(GET_POKEMON_BY_ID);
 	return function (dispatch) {
-		return axios(`http://localhost:3001/pokemons/${id}`)
+		return axios(`${DB_HOST}/pokemons/${id}`)
 			.then((response) => {
 				dispatch({ type: GET_POKEMON_BY_ID, payload: response.data });
 			})
@@ -54,7 +56,7 @@ export const getPokemonByName = (name) => {
 	console.log(GET_POKEMON_BY_NAME);
 	return function (dispatch) {
 		if (name) {
-			return axios(`http://localhost:3001/pokemons/name?name=${name}`)
+			return axios(`${DB_HOST}/pokemons/name?name=${name}`)
 				.then((response) => {
 					dispatch({ type: GET_POKEMON_BY_NAME, payload: [response.data] });
 				})
