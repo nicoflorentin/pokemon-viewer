@@ -13,7 +13,7 @@ server.name = "API"
 
 server.use(
 	cors({
-		origin: ["http://localhost:3000", "https://pokemon-viewer-pi.vercel.app"],
+		origin: "http://localhost:3000",
 	})
 )
 server.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }))
