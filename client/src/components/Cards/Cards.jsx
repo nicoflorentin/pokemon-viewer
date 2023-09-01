@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Card from "../Card/Card.jsx";
-import style from "./Cards.module.css";
 import Loader from "../Loader/Loader.jsx";
 import pikachu from "../../assets/images/loading.gif";
 
@@ -25,7 +24,7 @@ const Cards = ({ pokemons, loading }) => {
 
 	const currentPageStyleHandler = (index) => {
 		if (currentPage === index) {
-			return style.currentPage;
+			return ;
 		}
 	};
 
@@ -34,7 +33,7 @@ const Cards = ({ pokemons, loading }) => {
 		for (let i = 1; i <= totalPages; i++) {
 			pageNumbers.push(
 				<button
-					className={`${style.pageButton} ${currentPageStyleHandler(
+					className={`${null} ${currentPageStyleHandler(
 						i
 					)}`}
 					key={i}
@@ -47,10 +46,10 @@ const Cards = ({ pokemons, loading }) => {
 		return pageNumbers;
 	};
 	return (
-		<div className={style.cardsContainer}>
-			<div className={style.pagesContainer}>
+		<div className={null}>
+			<div className={null}>
 				<button
-					className={style.navButton}
+					className={null}
 					onClick={() => goToPage(currentPage - 1)}
 				>
 					Back
@@ -59,18 +58,18 @@ const Cards = ({ pokemons, loading }) => {
 					? renderPageNumbers(totalPages)
 					: renderPageNumbers(3)}
 				<button
-					className={style.navButton}
+					className={null}
 					onClick={() => goToPage(currentPage + 1)}
 				>
 					Next
 				</button>
 			</div>
 			{loading ? (
-				<div className={style.loader}>
+				<div className={null}>
 					<Loader image={pikachu}></Loader>
 				</div>
 			) : (
-				<div className={style.cardsRenderContainer}>
+				<div className={null}>
 					{!!pokemons.length && renderItems()}
 				</div>
 			)}

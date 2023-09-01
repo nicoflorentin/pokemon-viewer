@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import style from "./NavBar.module.css";
 import { Link } from "react-router-dom";
 import SearchBar from "../SearchBar/SearchBar";
 import OrderFilters from "../OrderFilters/OrderFilters";
@@ -15,14 +14,14 @@ const NavBar = () => {
 	}, []);
 
 	return (
-		<div className={style.navBarContainer}>
-			<div className={style.logo}></div>
-			<div className={style.links}>
+		<div className={null}>
+			<div className={null}></div>
+			<div className={null}>
 				<Link to="/home">
-					<button className={style.button}>HOME</button>
+					<button className={null}>HOME</button>
 				</Link>
 				<Link to="/form">
-					<button className={style.button}>CREATE</button>
+					<button className={null}>CREATE</button>
 				</Link>
 			</div>
 			<SearchBar />

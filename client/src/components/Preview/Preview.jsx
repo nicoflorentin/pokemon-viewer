@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./Preview.module.css";
 import upperCase from "../../helpers/upperCase";
 import computer from "../../assets/images/computer.png";
 
@@ -8,27 +7,27 @@ const Preview = ({ pokemon }) => {
 		pokemon;
 
 	return (
-		<div className={style.detailContainer}>
-			<div className={style.upperBar}>
+		<div className={null}>
+			<div className={null}>
 				<h3>{upperCase(name)}</h3>
 			</div>
 
-			<div className={style.infoContainer}>
+			<div className={null}>
 				<img
-					className={style.pokemonImg}
+					className={null}
 					src={computer}
 					alt="computer"
 				/>
-				<div className={style.statsContainer}>
+				<div className={null}>
 					<p>Hit Points: {hit_points}</p>
 					<p>Attack: {attack}</p>
 					<p>Defense: {defense}</p>
 					<p>Speed: {speed}</p>
 					<p>Height: {height}</p>
 					<p>Weight: {weight}</p>
-					<div className={style.typesContainer}>
+					<div className={null}>
 						{types.map((type) => (
-							<span className={style.type}>{type}</span>
+							<span className={null}>{type}</span>
 						))}
 					</div>
 				</div>

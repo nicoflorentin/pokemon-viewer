@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import pokemonValidation from "../../helpers/pokemonValidation";
 import postPokemon from "../../helpers/postPokemon";
 import { useSelector } from "react-redux";
-import style from "./Form.module.css";
 import Preview from "../Preview/Preview";
 
 const initialState = {
@@ -92,10 +91,10 @@ const Form = () => {
 
 	return (
 		<>
-		<p className={style.title}>Create a Pokemon</p>
-			<div className={style.componentContainer}>
-				<form className={style.formContainer} onSubmit={handleSubmit}>
-					<div className={style.formGroup}>
+		<p className={null}>Create a Pokemon</p>
+			<div className={null}>
+				<form className={null} onSubmit={handleSubmit}>
+					<div className={null}>
 						<label>Name </label>
 						<input
 							name="name"
@@ -105,7 +104,7 @@ const Form = () => {
 						/>
 						<p>{errors.name}</p>
 					</div>
-					<div className={style.formGroup}>
+					<div className={null}>
 						<label>Image URL </label>
 						<input
 							name="image"
@@ -115,7 +114,7 @@ const Form = () => {
 						/>
 						<p>{errors.image}</p>
 					</div>
-					<div className={style.formGroup}>
+					<div className={null}>
 						<label>Hit Points </label>
 						<input
 							name="hit_points"
@@ -125,7 +124,7 @@ const Form = () => {
 						/>
 						<p>{errors.hit_points}</p>
 					</div>
-					<div className={style.formGroup}>
+					<div className={null}>
 						<label>Attack </label>
 						<input
 							name="attack"
@@ -135,7 +134,7 @@ const Form = () => {
 						/>
 						<p>{errors.attack}</p>
 					</div>
-					<div className={style.formGroup}>
+					<div className={null}>
 						<label>Defense </label>
 						<input
 							name="defense"
@@ -145,7 +144,7 @@ const Form = () => {
 						/>
 						<p>{errors.defense}</p>
 					</div>
-					<div className={style.formGroup}>
+					<div className={null}>
 						<label>Speed </label>
 						<input
 							name="speed"
@@ -155,7 +154,7 @@ const Form = () => {
 						/>
 						<p>{errors.speed}</p>
 					</div>
-					<div className={style.formGroup}>
+					<div className={null}>
 						<label>Height </label>
 						<input
 							name="height"
@@ -165,7 +164,7 @@ const Form = () => {
 						/>
 						<p>{errors.height}</p>
 					</div>
-					<div className={style.formGroup}>
+					<div className={null}>
 						<label>Weight </label>
 						<input
 							name="weight"
@@ -177,7 +176,7 @@ const Form = () => {
 					</div>
 					<div>
 						<label>Types </label>
-						<div className={style.typesContainer}>
+						<div className={null}>
 							{types.map((type) => (
 								<div key={type.name}>
 									<label>

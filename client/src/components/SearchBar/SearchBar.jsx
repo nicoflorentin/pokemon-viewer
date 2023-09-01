@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as action from "../../redux/actions/index";
 import { useDispatch } from "react-redux";
-import style from "./SearchBar.module.css";
 import { useNavigate } from "react-router-dom";
 
 const SearchBar = () => {
@@ -23,13 +22,13 @@ const SearchBar = () => {
 	return (
 		<div>
 			<input
-				className={style.input}
+				className={null}
 				value={input}
 				type="text"
 				onChange={handleInput}
 			/>
 			<button
-				className={style.button}
+				className={null}
 				onClick={() => searchPokemon(input)}
 			>
 				Search

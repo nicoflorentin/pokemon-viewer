@@ -1,34 +1,3 @@
-* {
-	
-}
-
-.App {
-	text-align: center;
-	font-family: consolas;
-
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
-	min-height: 100vh;
-	text-align: center;
-	background: url("../src/assets/images/floating-pikachu.png") repeat 0 0;
-	background-size: 100px 100px;
-
-	-webkit-animation: bg-scrolling-reverse 16s infinite;
-	/* Safari 4+ */
-	-moz-animation: bg-scrolling-reverse 16s infinite;
-	/* Fx 5+ */
-	-o-animation: bg-scrolling-reverse 16s infinite;
-	/* Opera 12+ */
-	animation: bg-scrolling-reverse 16s infinite;
-	/* IE 10+ */
-	-webkit-animation-timing-function: linear;
-	-moz-animation-timing-function: linear;
-	-o-animation-timing-function: linear;
-	animation-timing-function: linear;
-}
-
 /* Animations */
 @-webkit-keyframes bg-scrolling-reverse {
 	100% {

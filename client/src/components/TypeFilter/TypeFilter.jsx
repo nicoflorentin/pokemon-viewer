@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import upperCase from "../../helpers/upperCase";
 import * as actions from "../../redux/actions/index";
-import style from "./TypeFilter.module.css";
 
 const TypeFilter = () => {
 	const [selectedType, setSelectedType] = useState("");
@@ -18,13 +17,13 @@ const TypeFilter = () => {
 
 	return (
 		<div>
-			<label>Filter by type </label>
+			<label>Filter by type</label>
 			<select
-				className={style.selector}
+				className={null}
 				value={selectedType}
 				onChange={handleTypeChange}
 			>
-				<option value="" disabled selected>
+				<option value="none" disabled>
 					Select a type
 				</option>
 				<option value="all">Todos</option>
@@ -38,4 +37,4 @@ const TypeFilter = () => {
 	);
 };
 
-export default TypeFilter;
+export default TypeFilter

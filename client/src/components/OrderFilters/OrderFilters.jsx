@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import * as actions from "../../redux/actions";
-import style from "./OrderFilters.module.css";
 
 const OrderFilters = () => {
 	const dispatch = useDispatch();
@@ -10,17 +9,17 @@ const OrderFilters = () => {
 	};
 
 	return (
-		<div className={style.componentContainer}>
+		<div className={null}>
 			<div>
 				<span>Order by name </span>
 				<button
-					className={style.button}
+					className={null}
 					onClick={() => orderHandler("ASCENDANT", "name")}
 				>
 					Ascendant
 				</button>
 				<button
-					className={style.button}
+					className={null}
 					onClick={() => orderHandler("DESCENDANT", "name")}
 				>
 					Descendant
@@ -29,13 +28,13 @@ const OrderFilters = () => {
 			<div>
 				<span>Order by attack </span>
 				<button
-					className={style.button}
+					className={null}
 					onClick={() => orderHandler("ASCENDANT", "attack")}
 				>
 					Ascendant
 				</button>
 				<button
-					className={style.button}
+					className={null}
 					onClick={() => orderHandler("DESCENDANT", "attack")}
 				>
 					Descendant

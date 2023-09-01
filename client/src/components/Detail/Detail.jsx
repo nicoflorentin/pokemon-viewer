@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
 import * as actions from "../../redux/actions/index";
-import style from "./Detail.module.css";
 import upperCase from "../../helpers/upperCase";
 import arrowLeft from "../../assets/images/arrow-left.svg";
 import Loader from "../Loader/Loader";
@@ -31,23 +30,23 @@ const Detail = () => {
 
 
 	return (
-		<div className={style.detailContainer}>
-			<div className={style.upperBar}>
+		<div className={null}>
+			<div className={null}>
 				<Link to="/home">
-					<img className={style.arrowLeft} src={arrowLeft} alt="arrow" />
+					<img className={null} src={arrowLeft} alt="arrow" />
 				</Link>
 				<h3>{upperCase(name)}</h3>
 			</div>
 			{loading ? (
 				<Loader image={loaderGif} />
 			) : (
-				<div className={style.infoContainer}>
+				<div className={null}>
 					<img
-						className={style.pokemonImg}
+						className={null}
 						src={image && image}
 						alt={name + id}
 					/>
-					<div className={style.statsContainer}>
+					<div className={null}>
 						<p>Hit Points: {hit_points}</p>
 						<p>Attack: {attack}</p>
 						<p>Defense: {defense}</p>
