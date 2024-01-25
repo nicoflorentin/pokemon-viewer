@@ -4,6 +4,8 @@ const fs = require("fs")
 const path = require("path")
 const { DB_USER, DB_PASSWORD, DB_HOST, EXTERNAL_DB } = process.env
 
+console.log(EXTERNAL_DB)
+
 const sequelize = new Sequelize(
 	// `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/pokemon`,
 	EXTERNAL_DB,

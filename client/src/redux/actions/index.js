@@ -8,7 +8,7 @@ export const CLEAN_DETAIL = "CLEAN_DETAIL";
 export const ORDER_POKEMONS = 'ORDER_POKEMONS'
 export const FILTER_BY_TYPE = 'FILTER_BY_TYPE'
 
-const DB_HOST = 'https://pokemon-api-82j0.onrender.com'
+const DB_HOST = 'https://powemin-viewer-api.onrender.com'
 
 
 export const getTypes = () => {
