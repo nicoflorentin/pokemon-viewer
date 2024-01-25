@@ -22,7 +22,7 @@ server.use(morgan('dev'));
 // };
 
 // app.use(cors(corsOptions));
-app.use(cors(corsOptions));
+app.use(cors());
 
 server.use('/', routes);
 
