@@ -12,10 +12,6 @@ const server = express();
 
 server.name = 'API';
 
-server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
-server.use(bodyParser.json({ limit: '50mb' }));
-server.use(cookieParser());
-server.use(morgan('dev'));
 // CORS CONFIG
 const corsOptions = {
   origin: ["http://localhost:5173", "https://pokemon-viewer-pi.vercel.app"],
@@ -24,6 +20,10 @@ const corsOptions = {
 };
 
 server.use(cors(corsOptions));
+server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+server.use(bodyParser.json({ limit: '50mb' }));
+server.use(cookieParser());
+server.use(morgan('dev'));
 
 server.use('/', routes);
 
