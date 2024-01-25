@@ -16,7 +16,7 @@ server.use(cookieParser());
 server.use(morgan('dev'));
 //CORS CONFIG
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://powemin-viewer-api.onrender.com"],
+  origin: ["http://localhost:5173", "https://pokemon-viewer-pi.vercel.app/"],
   credentials: true, //access-control-allow-credentials:true
   allowedHeaders: ["Content-Type", "Authorization"],
 };
