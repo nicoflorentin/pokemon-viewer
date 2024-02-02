@@ -14,7 +14,7 @@ server.name = 'API';
 
 // CORS CONFIG
 const corsOptions = {
-  origin: ["http://localhost:3000/", "https://pokemon-viewer-pi.vercel.app"],
+  origin: ["http://localhost:3000", "https://pokemon-viewer-pi.vercel.app"],
   credentials: true, //access-control-allow-credentials:true
   allowedHeaders: ["Content-Type", "Authorization"],
 };
